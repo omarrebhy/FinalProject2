@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <label class="switch">
+            <input id="darkMode" type="checkbox" onclick="changeMode()">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+
+
+
+    <h1 class=" text-center text-info"> Welcome At ToDo App </h1>
+    <div class="container col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Write Task</label>
+                    <input id="taskData" type="" class="form-control">
+
+                </div>
+                <button id="addBtn" class="btn btn-info btn-block">Add Task</button>
+            </div>
+        </div>
+    </div>
+    <div class="container col-md-7 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <div id="allTasks">
+
+                </div>
+                <div id="noTasks" class="alert alert-danger text-center">
+                    No Tasks Added Yet
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function changeMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode")
+        }
+    </script>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
